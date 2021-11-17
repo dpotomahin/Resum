@@ -1,0 +1,100 @@
+input{
+  position: absolute;
+  top: -100px;
+}
+input::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: url(./img/HHq5mKsM_400x400.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 870px;
+    left: 120px;
+}
+input:checked::before{
+    background: url(./img/Unknown);
+    background-size: cover;
+    background-position: -17px;
+}
+input:checked + .global{
+    background-color: black;
+}
+input:checked + .global .mom2 h1{
+    color: dimgrey;
+}
+input:checked + .global .mom2 h4{
+    color: dimgrey;
+}
+input:checked + .global .mom2 h6{
+    color: dimgrey;
+}
+input:checked + .global .mom2 h3{
+    color: dimgrey;
+}
+input:checked + .global .mom2 p{
+    color: dimgrey;
+}
+input:checked + .global .mom2 li{
+    color: dimgrey;
+}
+input:checked + .global .mom2 span{
+    color: rgb(145, 0, 0);
+}
+input:checked + .global .mom1{
+    background-color: rgb(0, 63, 63);
+}
+input:checked + .global .mom1 h1{
+    color:floralwhite;
+}
+input:checked + .global .mom1 p{
+    color:floralwhite;
+}
+input:checked + .global .mom1 li{
+    color:floralwhite;
+}
+body{
+    background-color: darkgrey;
+    margin: auto;
+}
+.global{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+.mom1{
+    width: 300px;
+    height: 850px;
+    background-color: darkcyan;
+    margin: 35px;
+    padding-left: 20px;
+}
+.mom1 img{
+    margin-top: 30px;
+    width: 320px;
+    position: relative;
+    left: -20px;
+}
+.mom2{
+    width: 700px;
+    height: 850px;
+    padding-top: 20px;
+}
+.mom2 span{
+    color: red;
+}
+.mom2 h6{
+    color: rgba(0, 0, 0, 0.39);
+}
+@media screen and (max-width: 900px){
+    .mom1{
+        height: 1000px;
+    }
+    .mom2{
+        height: 1000px;
+    }
+}
